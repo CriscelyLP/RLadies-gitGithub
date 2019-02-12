@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>R-Ladies Montpellier</title>
+    <meta charset="utf-8">
+    <meta name="author" content="Criscely Luján" />
+    <meta name="date" content="2019-02-12" />
+    <link href="libs/remark-css/default.css" rel="stylesheet" />
+    <link href="libs/remark-css/rladies.css" rel="stylesheet" />
+    <link href="libs/remark-css/rladies-fonts.css" rel="stylesheet" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+# R-Ladies Montpellier
+## Version control with GITHUB
+### Criscely Luján
+### February 12, 2019
+
+---
+
+
+
+
+class: inverse, center, middle
+
+# Keep in touch
+
+&lt;a href="mailto:criscelylujan@gmail.com"&gt;&lt;i class="fa fa-paper-plane fa-fw"&gt;&lt;/i&gt;&amp;nbsp;Personal email: criscelylujan@gmail.com&lt;/a&gt;&lt;br&gt;
+&lt;a href="mailto:criscely.lujan@ird.fr"&gt;&lt;i class="fa fa-paper-plane fa-fw"&gt;&lt;/i&gt;&amp;nbsp; Profesional email: criscely.lujan@ird.fr&lt;/a&gt;&lt;br&gt;
+&lt;a href="http://twitter.com/CriscelyLP"&gt;&lt;i class="fa fa-twitter fa-fw"&gt;&lt;/i&gt;&amp;nbsp; Twitter: @CriscelyLP&lt;/a&gt;&lt;br&gt;
+&lt;a href="http://github.com/CriscelyLP"&gt;&lt;i class="fa fa-github fa-fw"&gt;&lt;/i&gt;&amp;nbsp; GitHub: @CriscelyLP&lt;/a&gt;&lt;br&gt;
+
+
+---
+
+background-image: url("https://media.giphy.com/media/3oD3YveOJWdwIAfZ5e/giphy.gif")
+background-position: 50% 50%
+class: center, inverse
+background-size: 700px
+
+# Get Started! yeah !
+
+---
+
+# Why version control?
+
+&lt;!-- ![](img/phd_comics.png) --&gt;
+
+&lt;div class="figure" style="text-align: center"&gt;
+&lt;img src="img/phd_comics.png" alt="phdcomics.com" width="350px" /&gt;
+&lt;p class="caption"&gt;phdcomics.com&lt;/p&gt;
+&lt;/div&gt;
+
+---
+
+# Why version control?
+
+--
+
+The version control is important for:
+
+--
+
+- Storing version (properly)
+
+--
+
+- Restoring previous versions
+
+--
+
+- Collaborations
+
+--
+
+- Save time! 
+
+---
+
+# Why version control?
+
+--
+
+&lt;div class="figure" style="text-align: center"&gt;
+&lt;img src="img/controlVersion.png" alt="Wikipedia" width="1000px" /&gt;
+&lt;p class="caption"&gt;Wikipedia&lt;/p&gt;
+&lt;/div&gt;
+
+---
+
+# Why git?
+
+--
+
+Git is a distributed version-control system for tracking changes in source code during software developed
+
+--
+
+&lt;br&gt; 
+&lt;br&gt; 
+&lt;br&gt; 
+
+&lt;img src="img/git_logo.png" width="500px" style="display: block; margin: auto;" /&gt;
+
+---
+
+# Why git?
+
+--
+- Distributed
+    - Work online or offline
+    - Collaborate with large groups
+
+--
+
+- Popular and Successful
+    - Active development
+    - Shiny new tools
+    - Fast
+
+--
+
+- Tracks any type of file
+    - Works best with text 
+
+--
+
+- Branching
+    - Smarter merges
+--
+
+&lt;br&gt; 
+&lt;br&gt; 
+**Slide taken from [Mine Cetinkaya-Rundel](http://rpubs.com/mine/rladies-git)**.
+
+---
+
+# GitHub Inc.
+
+A web-based hosting service for version control using Git.
+
+[GitHub](https://github.com/)
+
+&lt;br&gt; 
+&lt;br&gt; 
+
+&lt;img src="img/github_logos.png" width="900px" style="display: block; margin: auto;" /&gt;
+
+---
+
+# GitHub Inc.
+
+- Access control and collaboration features for every project.
+
+--
+
+- Work with public and private repositories.
+
+--
+
+- Develop a networking.
+
+--
+
+- Plans for enterprise, teams, pro and free accounts.
+
+--
+
+- Is the largest host of source code in the wordl! (28 million users and 57 million repositories until Jube 2018).
+
+--
+
+.pull-center[![](https://media.giphy.com/media/3o7abKhOpu0NwenH3O/giphy.gif)]
+
+---
+
+# Thanks!
+
+Slides created via the R package [**xaringan**](https://github.com/yihui/xaringan) with the [**R-Ladies theme**](https://github.com/rladies/resources/blob/master/xaringan-slides/how_to_use.md)
+    </textarea>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function() {
+  var d = document, s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})();</script>
+
+<script>
+(function() {
+  var i, text, code, codes = document.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+})();
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>

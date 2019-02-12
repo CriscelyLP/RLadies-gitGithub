@@ -1,0 +1,181 @@
+---
+title: "R-Ladies Montpellier"
+subtitle: "Version control with GITHUB"
+author: "Criscely Luján"
+date: "February 12, 2019"
+output:
+  xaringan::moon_reader:
+    css: ["default", "rladies", "rladies-fonts"]
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+---
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+```
+
+class: inverse, center, middle
+
+# Keep in touch
+
+<a href="mailto:criscelylujan@gmail.com"><i class="fa fa-paper-plane fa-fw"></i>&nbsp;Personal email: criscelylujan@gmail.com</a><br>
+<a href="mailto:criscely.lujan@ird.fr"><i class="fa fa-paper-plane fa-fw"></i>&nbsp; Profesional email: criscely.lujan@ird.fr</a><br>
+<a href="http://twitter.com/CriscelyLP"><i class="fa fa-twitter fa-fw"></i>&nbsp; Twitter: @CriscelyLP</a><br>
+<a href="http://github.com/CriscelyLP"><i class="fa fa-github fa-fw"></i>&nbsp; GitHub: @CriscelyLP</a><br>
+
+
+---
+
+background-image: url("https://media.giphy.com/media/3oD3YveOJWdwIAfZ5e/giphy.gif")
+background-position: 50% 50%
+class: center, inverse
+background-size: 700px
+
+# Get Started! yeah !
+
+---
+
+# Why version control?
+
+<!-- ![](img/phd_comics.png) -->
+
+```{r, echo=FALSE, out.width = "350px", fig.align='center', fig.cap="phdcomics.com"}
+knitr::include_graphics("img/phd_comics.png")
+```
+
+---
+
+# Why version control?
+
+--
+
+The version control is important for:
+
+--
+
+- Storing version (properly)
+
+--
+
+- Restoring previous versions
+
+--
+
+- Collaborations
+
+--
+
+- Save time! 
+
+---
+
+# Why version control?
+
+--
+
+```{r, echo=FALSE, out.width = "1000px", fig.align='center', fig.cap="Wikipedia"}
+
+knitr::include_graphics("img/controlVersion.png")
+```
+
+---
+
+# Why git?
+
+--
+
+Git is a distributed version-control system for tracking changes in source code during software developed
+
+--
+
+<br> 
+<br> 
+<br> 
+
+```{r, echo=FALSE, out.width = "500px", fig.align='center', fi}
+
+knitr::include_graphics("img/git_logo.png")
+```
+
+---
+
+# Why git?
+
+--
+- Distributed
+    - Work online or offline
+    - Collaborate with large groups
+
+--
+
+- Popular and Successful
+    - Active development
+    - Shiny new tools
+    - Fast
+
+--
+
+- Tracks any type of file
+    - Works best with text 
+
+--
+
+- Branching
+    - Smarter merges
+--
+
+<br> 
+<br> 
+**Slide taken from [Mine Cetinkaya-Rundel](http://rpubs.com/mine/rladies-git)**.
+
+---
+
+# GitHub Inc.
+
+A web-based hosting service for version control using Git.
+
+[GitHub](https://github.com/)
+
+<br> 
+<br> 
+
+```{r, echo=FALSE, out.width = "900px", fig.align='center'}
+
+knitr::include_graphics("img/github_logos.png")
+```
+
+---
+
+# GitHub Inc.
+
+- Access control and collaboration features for every project.
+
+--
+
+- Work with public and private repositories.
+
+--
+
+- Develop a networking.
+
+--
+
+- Plans for enterprise, teams, pro and free accounts.
+
+--
+
+- Is the largest host of source code in the wordl! (28 million users and 57 million repositories until Jube 2018).
+
+--
+
+.pull-center[![](https://media.giphy.com/media/3o7abKhOpu0NwenH3O/giphy.gif)]
+
+---
+
+# Thanks!
+
+Slides created via the R package [**xaringan**](https://github.com/yihui/xaringan) with the [**R-Ladies theme**](https://github.com/rladies/resources/blob/master/xaringan-slides/how_to_use.md) 
+
