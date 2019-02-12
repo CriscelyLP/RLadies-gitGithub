@@ -30,17 +30,16 @@ class: inverse, center, middle
 ---
 
 background-image: url("https://media.giphy.com/media/3oD3YveOJWdwIAfZ5e/giphy.gif")
-background-position: 50% 50%
+background-position: 50% 60%
 class: center, inverse
 background-size: 700px
 
-# Get Started! yeah !
+# Get start! YEAH!
+
 
 ---
 
-# Why version control?
-
-<!-- ![](img/phd_comics.png) -->
+# Why is important version control?
 
 ```{r, echo=FALSE, out.width = "350px", fig.align='center', fig.cap="phdcomics.com"}
 knitr::include_graphics("img/phd_comics.png")
@@ -48,31 +47,40 @@ knitr::include_graphics("img/phd_comics.png")
 
 ---
 
-# Why version control?
+# Why is important version control?
 
 --
 
 The version control is important for:
 
+<br> 
 --
 
 - Storing version (properly)
+
+<br> 
 
 --
 
 - Restoring previous versions
 
+<br> 
+
 --
 
 - Collaborations
+
+<br> 
 
 --
 
 - Save time! 
 
+<br> 
+
 ---
 
-# Why version control?
+# Version control software
 
 --
 
@@ -87,7 +95,7 @@ knitr::include_graphics("img/controlVersion.png")
 
 --
 
-Git is a distributed version-control system for tracking changes in source code during software developed.
+Git is a distributed version-control system for tracking changes in source code during the development of software.
 
 --
 
@@ -135,6 +143,8 @@ knitr::include_graphics("img/git_logo.png")
 
 # GitHub Inc.
 
+--
+
 A web-based hosting service for version control using Git.
 
 [GitHub](https://github.com/)
@@ -151,23 +161,31 @@ knitr::include_graphics("img/github_logos.png")
 
 # GitHub Inc.
 
-- Access control and collaboration features for every project.
+- Access to the control and collaboration features for every `project`.
+
+<br> 
 
 --
 
-- Work with public and private repositories.
+- Work with public and private `repositories`.
+
+<br> 
 
 --
 
-- Develop a networking.
+- Develop a `networking`.
+
+<br> 
 
 --
 
-- Plans for enterprise, teams, pro and free accounts.
+- `Plans` for enterprise, teams, pro and free accounts.
+
+<br> 
 
 --
 
-- Is the largest host of source code in the wordl! (28 million users and 57 million repositories until Jube 2018).
+- Is the `largest host of source code` in the wordl! (28 million users and 57 million repositories until Jube 2018).
 
 ---
 
@@ -177,16 +195,22 @@ knitr::include_graphics("img/github_logos.png")
 
 - Register an account with [GitHub](https://github.com/) is free!
 
+<br> 
+
 --
 
 - Free private repos
   - Students, faculty, and educational/research staff: [GitHub Education](https://education.github.com/)
   - Official nonprofit organizations and charities: [GitHub for Good](https://github.com/nonprofit)
 
+<br> 
+
 --
 
 - Pay for private repos
   - $7/month: [GitHub Pricing](https://github.com/pricing)
+
+<br> 
 
 --
 
@@ -194,7 +218,7 @@ knitr::include_graphics("img/github_logos.png")
   - Use your actual name!
   - Shorter is better than longer!
   - Be as unique as possible!
-  - Reuse your name from other context, e.g. Twitter or Slack!
+  - Reuse your name from other context, e.g. `Twitter` or `Slack`!
 
 ---
 
@@ -260,13 +284,17 @@ $ git config --global --list
 
 --
 
-- Git and Git client are not the same! Like R and RStudio is not the same thing! 💜
+- Git and Git client `are not` the same! Like R and RStudio is not the same thing! 💜
+
+<br>
 
 --
 
 - Git client: 
   - Integrated development environment!
-  - Make the experience more pleasant providing a richer visual representation!}
+  - Make the experience more pleasant providing a richer visual representation!
+
+<br>
 
 --
 
@@ -291,7 +319,9 @@ class: center, inverse
 
 # How authenticating yourself with GitHub?
 
-Two options of protocols for secure communication working over a computer network!
+--
+
+There are two options of protocols for secure communication working over a computer network!
 
 --
 
@@ -308,7 +338,7 @@ knitr::include_graphics("img/https.png")
 
 --
 
-If you plan to push/pull using HTTPS protocol you can follow it for more information: [Cache credentials for HTTPS](https://happygitwithr.com/credential-caching.html#credential-caching) 
+If you plan to push/pull using HTTPS protocol, you can follow [Cache credentials for HTTPS](https://happygitwithr.com/credential-caching.html#credential-caching) for more information. 
 
 --
 
@@ -325,7 +355,7 @@ knitr::include_graphics("img/ssh.png")
 
 --
 
-If you plan to push/pull using SSH protocol you can follow it for more information: [Set up keys for SSH](https://happygitwithr.com/ssh-keys.html#ssh-keys) 
+If you plan to push/pull using SSH protocol, you can follow [Set up keys for SSH](https://happygitwithr.com/ssh-keys.html#ssh-keys) for more information.
 
 ---
 
@@ -334,7 +364,7 @@ If you plan to push/pull using SSH protocol you can follow it for more informati
 <br> 
 --
 
-## Setup Git on RStudio and Associate with GitHub
+## Setup Git + RStudio + GitHub
 
 --
 
@@ -345,7 +375,7 @@ If you plan to push/pull using SSH protocol you can follow it for more informati
 
 <br> 
 
-Step by step with picture to dont be lost here: [Connecting RStudio and GitHub](https://www.r-bloggers.com/rstudio-and-github/) 
+Step by step here: [Connecting RStudio and GitHub](https://www.r-bloggers.com/rstudio-and-github/) 
 
 ---
 
@@ -359,23 +389,23 @@ class: center, inverse
 
 # Make a new repo
 
-- Go to https://github.com and make sure you are logged in. Click green "New repository".
+- Go to https://github.com and login. Click in the green box called `New repository`.
 
 --
 
-- If you are on your own profile page, go to the section `Repositories`, then click the green “New” button.
+- If you are on your own profile page, go to the section `Repositories`, then click the green box called `New`.
 
 --
 
-- Assign a name for the repository and include a description (this is optional but is recommended!)
+- Assign a name for the `repository` and include a `description` (this is optional but is recommended!).
 
 --
 
-- Public or private
+- Public or private.
 
 --
 
-- Initializa the repository using the README
+- Initializa the repository using the `README`.
 
 ---
 
@@ -474,7 +504,7 @@ git commit -m "Commit message"
 
 --
 
-Now the file (or changes in general) is committed to the HEAD, but not in your remote repository yet!
+Now the file (or changes in general) is committed to the `HEAD`, but not in your remote repository YET!
 
 ---
 
@@ -482,7 +512,7 @@ Now the file (or changes in general) is committed to the HEAD, but not in your r
 
 --
 
-When your changes are in HEAD, your are ready to sent those changes to your remote repository, executing:
+When your changes are in `HEAD`, your are ready to sent those changes to your remote repository, executing:
 
 --
 
@@ -493,7 +523,10 @@ git push origin master
 
 --
 
-If you dont know that is a `branch`, the next slide is for you! 💜 
+<br>
+<br>
+
+## If you dont know that is a `branch`, the next slide is for YOU! 💜 
 
 ---
 
@@ -502,7 +535,7 @@ background-position: 50% 80%
 class: center, inverse
 background-size: 500px
 
-# Branches are used to develop features isolated from each other!
+# Branches are used to develop features ISOLATED from each other!
 
 ---
 
@@ -512,19 +545,21 @@ background-size: 500px
 
 - The `master` branch is the default branch when you create a repository.
 
---
-
-- We can create other branch for other development.
+<br> 
 
 --
 
-- We can merge branches to the master branch.
-
---
+- We can create other branch for the development of other features (example: `develop` branch).
 
 <br> 
 
-```{r, echo=FALSE, out.width = "800px", fig.align='center'}
+--
+
+- We can merge branches.
+
+--
+
+```{r, echo=FALSE, out.width = "700px", fig.align='center'}
 
 knitr::include_graphics("img/branching.png")
 ```
@@ -539,14 +574,14 @@ git checkout -b feature_x
 ```
 --
 
-Switch back to master:
+Switch back to `master`:
 ```{r, eval = FALSE}
 git checkout master
 ```
 
 --
 
-To delete the brach:
+To delete the brach `feature_x`:
 ```{r, eval = FALSE}
 git branch -d feature_x
 ```
@@ -554,9 +589,8 @@ git branch -d feature_x
 --
 
 IMPORTANT!!!!!
-Any branch in your local repository is not available to others unless you push the branch to your remore repository, doing:
+Any branch in your local repository is available to others users unless you push the branch to the remore repository, doing:
 
-To delete the brach:
 ```{r, eval = FALSE}
 git push origin feature_x
 ```
@@ -570,14 +604,79 @@ git push origin feature_x
 To update your local repository to the newest commit, execute:
 
 ```{r, eval = FALSE}
-git push origin feature_x
+git pull
+```
+
+--
+
+To merge another branch into your active branch (for example: master), use:
+
+```{r, eval = FALSE}
+git merge <branch>
+```
+
+--
+
+Before marging changes in branch you can also see the differences!
+
+```{r, eval = FALSE}
+git diff <source_branch> <target_branch>
+```
+
+--
+
+More information about git commands here: [Git the Simple guide](http://rogerdudler.github.io/git-guide/)
+
+---
+
+```{r, echo=FALSE, out.width = "600px", fig.align='center'}
+
+knitr::include_graphics("img/git_scheme.png")
 ```
 
 ---
 
-# Make local changes, save and commit
+# Exercise
+
+- Create a repo in GitHub.
+
+- Clone the repo in your computer.
+
+- Make changes (editting also the README.md and .gitignore)
+
+- Make commits, if is possible include emojis to have fun! :)
+
+- Use: push / pull / merge / status / etc.
+
+- Check the changes in you remore repository.
+
+- Develop a new branch, delete it, play, enjoy and ...
+
+# ...be in problems, we are here to help you! 
+
+---
+
+background-image: url("https://media.giphy.com/media/4EF5xIO5yiivWh4gGn/giphy.gif")
+background-position: 50% 80%
+class: center, inverse
+background-size: 500px
+
+# Follow the [R-Ladies Montpellier ](https://github.com/r-ladies-montpellier) in GitHub.
+
+---
 
 # Thanks!
 
-Slides created via the R package [**xaringan**](https://github.com/yihui/xaringan) with the [**R-Ladies theme**](https://github.com/rladies/resources/blob/master/xaringan-slides/how_to_use.md) 
+- [R-Ladies Global](https://rladies.org/) for the help and support.
 
+- [Jenny Bryan](https://github.com/jennybc): [Happy Git with R](https://happygitwithr.com/).
+
+- Slides created via the R package [**xaringan**](https://github.com/yihui/xaringan) with the [**R-Ladies theme**](https://github.com/rladies/resources/blob/master/xaringan-slides/how_to_use.md) 
+
+- [Cowork'in Montpellier](http://coworkinmontpellier.org/)
+
+<br> 
+
+```{r, echo=FALSE, out.width = "300px", fig.align='center', fig.cap="phdcomics.com"}
+knitr::include_graphics("img/rladies.png")
+```
