@@ -94,7 +94,7 @@ The version control is important for:
 
 --
 
-Git is a distributed version-control system for tracking changes in source code during software developed
+Git is a distributed version-control system for tracking changes in source code during software developed.
 
 --
 
@@ -170,11 +170,267 @@ A web-based hosting service for version control using Git.
 
 - Is the largest host of source code in the wordl! (28 million users and 57 million repositories until Jube 2018).
 
+---
+
+# Register a GitHub account
+
 --
 
-.pull-center[![](https://media.giphy.com/media/3o7abKhOpu0NwenH3O/giphy.gif)]
+- Register an account with [GitHub](https://github.com/) is free!
+
+--
+
+- Free private repos
+  - Students, faculty, and educational/research staff: [GitHub Education](https://education.github.com/)
+  - Official nonprofit organizations and charities: [GitHub for Good](https://github.com/nonprofit)
+
+--
+
+- Pay for private repos
+  - $7/month: [GitHub Pricing](https://github.com/pricing)
+
+--
+
+- Tips about the name acount:
+  - Use your actual name!
+  - Shorter is better than longer!
+  - Be as unique as possible!
+  - Reuse your name from other context, e.g. Twitter or Slack!
 
 ---
+
+# Git is already installed?
+
+--
+
+To check that go to shell (terminal / command line / console) and enter `which git` to request the path to your Git executable: 
+
+--
+
+
+```bash
+which git
+```
+
+```
+## /usr/bin/git
+```
+
+--
+
+&lt;br&gt; 
+
+Then enter `git --version` to see its version
+
+
+```bash
+git --version
+```
+
+```
+## git version 2.14.5
+```
+
+--
+
+&lt;br&gt; 
+&lt;br&gt; 
+
+- **If git is not installed YET**: See [Install git](https://happygitwithr.com/install-git.html) to follow the correct steps to install git according your system operative! :)
+
+---
+
+# Introduce yourself to Git
+
+Let `git` know how you are following this simple configuration steps!
+
+--
+
+```bash
+$ git config --global user.name "Criscely Lujan"
+$ git config --global user.email "criscelylujan@gmail.com"
+$ git config --global core.editor vim
+$ git config --global --list
+```
+--
+
+- `user.name` can be your GitHub username. Your commits will be labelled with this name, so this should be informative!
+
+--
+
+- `user.email` must be the email that you use to sign up for GitHub.
+
+--
+
+- There are diverse options of [Git editor](http://swcarpentry.github.io/git-novice/02-setup/).
+
+
+---
+
+# Git Clients
+
+--
+
+- Git and Git client are not the same! Like R and RStudio is not the same thing! 💜
+
+--
+
+- Git client: 
+  - Integrated development environment!
+  - Make the experience more pleasant providing a richer visual representation!}
+
+--
+
+- Some Git clients:
+  - [SourceTreen](https://www.sourcetreeapp.com/)
+  - [GitKraken](https://www.gitkraken.com/)
+  - [GitUp](https://gitup.co/)
+  - [SmartGit](https://www.syntevo.com/smartgit/)
+  - [git-cola](https://git-cola.github.io/)
+  - ... others...
+  - **RStudio**
+
+---
+
+background-image: url("https://media.giphy.com/media/31Q36EHJ7C5ZoIMw79/giphy.gif")
+background-position: 50% 50%
+class: center, inverse
+
+# Almost ready!
+
+---
+
+# How authenticating yourself with GitHub?
+
+Two options of protocols for secure communication working over a computer network!
+
+--
+
+- Hypertext Transfer Protocol Secure (HTTPS)
+
+.pull-rigth[
+
+&lt;img src="img/https.png" width="200px" style="display: block; margin: auto;" /&gt;
+
+]
+
+--
+
+If you plan to push/pull using HTTPS protocol you can follow it for more information: [Cache credentials for HTTPS](https://happygitwithr.com/credential-caching.html#credential-caching) 
+
+--
+
+- Secure Shell (SSH)
+
+.pull-rigth[
+
+&lt;img src="img/ssh.png" width="100px" style="display: block; margin: auto;" /&gt;
+
+]
+
+--
+
+If you plan to push/pull using SSH protocol you can follow it for more information: [Set up keys for SSH](https://happygitwithr.com/ssh-keys.html#ssh-keys) 
+
+---
+
+# RStudio and GitHub
+
+&lt;br&gt; 
+--
+
+## Setup Git on RStudio and Associate with GitHub
+
+--
+
+- Tools / Global Options / Select Git/SVN tab.
+- Create the RSA key.
+- Click, View public key, and copy the displayed public key.
+- Save the key on your GitHub account: Settings / SSH key / Add SSH key.
+
+&lt;br&gt; 
+
+Step by step with picture to dont be lost here: [Connecting RStudio and GitHub](https://www.r-bloggers.com/rstudio-and-github/) 
+
+---
+
+background-image: url("https://media.giphy.com/media/26AHyxxCItIbFijLO/giphy.gif")
+background-position: 50% 50%
+class: center, inverse
+
+# Now we can really have fun!
+
+---
+
+# Make a new repo
+
+- Go to https://github.com and make sure you are logged in. Click green "New repository".
+
+--
+
+- If you are on your own profile page, go to the section `Repositories`, then click the green “New” button.
+
+--
+
+- Assign a name for the repository and include a description (this is optional but is recommended!)
+
+--
+
+- Public or private
+
+--
+
+- Initializa the repository using the README
+
+---
+
+&lt;img src="img/github_makeRepo.png" width="800px" style="display: block; margin: auto;" /&gt;
+
+---
+
+# Clone a repo
+
+## Using RStudio
+
+- File -&gt; New Project
+
+--
+
+- Version control
+
+--
+
+- Git
+
+--
+
+- Fill `Repository URL` and project name (what you want the folder to be called locally). 
+
+
+## Using terminal
+
+- Create a new directory, open it and perform `git init` to create a new git repository.
+
+--
+
+- Clone the repository running the command: `git clone /path/to/repository`
+
+--
+
+- When you are using a remote server, your command will be:
+`git clone username@host:/path/to/repository`
+
+-- 
+
+- For example: `git clone git@github.com:r-ladies-montpellier/20181212-RLadiesMontpellier-Meetup1.git`
+
+---
+
+# Make local changes, save and commit
+
+---
+
+#
 
 # Thanks!
 
