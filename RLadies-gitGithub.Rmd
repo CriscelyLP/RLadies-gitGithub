@@ -404,31 +404,178 @@ knitr::include_graphics("img/github_makeRepo.png")
 
 - Fill `Repository URL` and project name (what you want the folder to be called locally). 
 
+---
+
+# Clone a repo
 
 ## Using terminal
 
-- Create a new directory, open it and perform `git init` to create a new git repository.
+- Create a new directory, open it and perform `git init` to create a new git repository:
+
+```{r, eval = FALSE}
+git init
+```
 
 --
 
-- Clone the repository running the command: `git clone /path/to/repository`
+- Clone the repository running the command `git clone` plus the path:
+
+```{r, eval = FALSE}
+git clone /path/to/repository
+```
 
 --
 
 - When you are using a remote server, your command will be:
 `git clone username@host:/path/to/repository`
 
--- 
+- For example:
+```{r, eval = FALSE}
+git clone git@github.com:r-ladies-montpellier/20181212-RLadiesMontpellier-Meetup1.git
+```
 
-- For example: `git clone git@github.com:r-ladies-montpellier/20181212-RLadiesMontpellier-Meetup1.git`
+---
+
+# Workflow
+
+Your local repository consists of three "trees" maintained by git.
+
+<br> 
+
+```{r, echo=FALSE, out.width = "800px", fig.align='center'}
+
+knitr::include_graphics("img/workflow.png")
+```
+
+---
+
+# Add and commit
+
+- After clone the repository already clone on your computer, you can make changes and propose changes using `add` and `commit`: 
+
+For specific file:
+```{r, eval = FALSE}
+git add <filename>
+```
+
+--
+
+Or adding all changes:
+```{r, eval = FALSE}
+git add .
+```
+
+--
+
+Commit!
+```{r, eval = FALSE}
+git commit -m "Commit message"
+```
+
+--
+
+Now the file (or changes in general) is committed to the HEAD, but not in your remote repository yet!
+
+---
+
+# Pushing changes
+
+--
+
+When your changes are in HEAD, your are ready to sent those changes to your remote repository, executing:
+
+--
+
+```{r, eval = FALSE}
+# If your are not working in "master", change the branch
+git push origin master
+```
+
+--
+
+If you dont know that is a `branch`, the next slide is for you! 💜 
+
+---
+
+background-image: url("https://media.giphy.com/media/FX7A7ZBnOgz3W/giphy.gif")
+background-position: 50% 80%
+class: center, inverse
+background-size: 500px
+
+# Branches are used to develop features isolated from each other!
+
+---
+
+# Branching
+
+--
+
+- The `master` branch is the default branch when you create a repository.
+
+--
+
+- We can create other branch for other development.
+
+--
+
+- We can merge branches to the master branch.
+
+--
+
+<br> 
+
+```{r, echo=FALSE, out.width = "800px", fig.align='center'}
+
+knitr::include_graphics("img/branching.png")
+```
+
+---
+
+# Branching
+
+Create a new branch named `feature_x` and switch to it using :
+```{r, eval = FALSE}
+git checkout -b feature_x
+```
+--
+
+Switch back to master:
+```{r, eval = FALSE}
+git checkout master
+```
+
+--
+
+To delete the brach:
+```{r, eval = FALSE}
+git branch -d feature_x
+```
+
+--
+
+IMPORTANT!!!!!
+Any branch in your local repository is not available to others unless you push the branch to your remore repository, doing:
+
+To delete the brach:
+```{r, eval = FALSE}
+git push origin feature_x
+```
+
+---
+
+# Update and merge
+
+--
+
+To update your local repository to the newest commit, execute:
+
+```{r, eval = FALSE}
+git push origin feature_x
+```
 
 ---
 
 # Make local changes, save and commit
-
----
-
-#
 
 # Thanks!
 
