@@ -673,7 +673,7 @@ background-size: 500px
 
 - Slides created via the R package [**xaringan**](https://github.com/yihui/xaringan) with the [**R-Ladies theme**](https://github.com/rladies/resources/blob/master/xaringan-slides/how_to_use.md) 
 
-- [Cowork'in Montpellier](http://coworkinmontpellier.org/)
+- [Cowork'in Montpellier](http://coworkinmontpellier.org/).
 
 <br> 
 
